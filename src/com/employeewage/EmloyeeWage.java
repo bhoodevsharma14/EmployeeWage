@@ -6,28 +6,32 @@ public class EmloyeeWage {
 	{
 		System.out.println("Welcome to Employee Wage Builder");
 		Random rand = new Random();
-		int attendance=rand.nextInt(3);
+		int WAGEPERHR=20;
+		int totalWorkinghr=0;
+		for(int day=1;day<=20;day++)
+		{			
+			int attendance=rand.nextInt(3);	
 			
-		int workinghr=0,WAGEPERHR=20;
-		
-		switch(attendance)
-		{
+			
+			switch(attendance)
+			{
 			case 0:
-					System.out.println("Employee is Absent");
-					workinghr=0;
-					break;
+				System.out.println("Employee is Absent");
+				totalWorkinghr+=0;
+				break;
 			case 1:
-				 	System.out.println("Employee is Present");
-					System.out.println("Employee Is Working For Half Day");
-					workinghr=4;
-					break;
+				System.out.println("Employee is Present");
+				System.out.println("Employee Is Working For Half Day");
+				totalWorkinghr+=4;
+				break;
 			case 2:
-					System.out.println("Employee is Present");
-					System.out.println("Employee Is Working For Full  Day");
-					workinghr=8;
+				System.out.println("Employee is Present");
+				System.out.println("Employee Is Working For Full  Day");
+				totalWorkinghr+=8;
+			}
 		}
 		
-		System.out.println("Employee Earn : " + workinghr*WAGEPERHR );
+		System.out.println("Employee Earn : " + totalWorkinghr*WAGEPERHR );
 		
 	}
 }
