@@ -16,22 +16,17 @@ public class EmloyeeWage {
 			switch(attendance)
 			{
 			case 0:
-				System.out.println("Employee is Absent");
-				totalWorkinghr+=0;
-				break;
+					totalWorkinghr+=0;
+					break;
 			case 1:
-				System.out.println("Employee is Present");
-				System.out.println("Employee Is Working For Half Day");
-				totalWorkinghr+=4;
-				break;
+					totalWorkinghr+=4;
+					break;
 			case 2:
-				System.out.println("Employee is Present");
-				System.out.println("Employee Is Working For Full  Day");
-				totalWorkinghr+=8;
+					totalWorkinghr+=8;
 			}
 		}
 		
-		System.out.println("Employee Earn : " + totalWorkinghr*WAGEPERHR );
+		System.out.println("Employee Earn : $" + totalWorkinghr*WAGEPERHR + " This Month." );
 		
 	}
 }
