@@ -24,7 +24,7 @@ public class EmloyeeWage {
 				workinghr=4;
 			}
 			else
-			{	System.out.println("Employee Is Working For Half Day");
+			{	System.out.println("Employee Is Working For Full  Day");
 				workinghr=8;
 			}
 		}
