@@ -18,7 +18,15 @@ public class EmloyeeWage {
 		else
 		{
 			System.out.println("Employee is Present");
-			workinghr=8;
+			int checkworkTm=rand.nextInt(2);
+			if (checkworkTm==0)
+			{	System.out.println("Employee Is Working For Half Day");
+				workinghr=4;
+			}
+			else
+			{	System.out.println("Employee Is Working For Half Day");
+				workinghr=8;
+			}
 		}
 		
 		System.out.println("Employee Earn :" + workinghr*WAGEPERHR );
