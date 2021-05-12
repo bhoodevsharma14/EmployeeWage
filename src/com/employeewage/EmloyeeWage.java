@@ -12,13 +12,13 @@ public class EmloyeeWage {
 		if (attendance==0)
 		{
 			System.out.println("Employee is Absent");
-			workinghr=8;
+			workinghr=0;
 		}
 		
 		else
 		{
 			System.out.println("Employee is Present");
-			workinghr=0;
+			workinghr=8;
 		}
 		
 		System.out.println("Employee Earn :" + workinghr*WAGEPERHR );
