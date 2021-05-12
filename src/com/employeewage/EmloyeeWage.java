@@ -10,19 +10,24 @@ public class EmloyeeWage {
 		int totalWorkinghr=0;
 		for(int day=1;day<=20;day++)
 		{			
-			int attendance=rand.nextInt(3);	
-			
+			int attendance=rand.nextInt(3);				
 			
 			switch(attendance)
 			{
-			case 0:
-					totalWorkinghr+=0;
-					break;
-			case 1:
-					totalWorkinghr+=4;
-					break;
-			case 2:
-					totalWorkinghr+=8;
+				case 0:
+						totalWorkinghr+=0;
+						break;
+				case 1:
+						totalWorkinghr+=4;
+						break;
+				case 2:
+						totalWorkinghr+=8;
+			}
+			
+			if (totalWorkinghr>=100)
+			{
+				totalWorkinghr=100;
+				break;
 			}
 		}
 		
